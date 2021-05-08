@@ -49,7 +49,7 @@ app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
 # Just Checking
-db = SQL(os.getenv("DATABASE_URL"))
+db = SQL(os.environ["DATABASE_URL"])
 
 # Make sure API key is set
 if not os.environ.get("API_KEY"):
