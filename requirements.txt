@@ -1,5 +1,5 @@
 appdirs==1.4.4
-astroid==2.5.2
+astroid==2.5.6
 attrs==20.3.0
 Authlib==0.15.3
 autopep8==1.5.6
@@ -31,10 +31,12 @@ filelock==3.0.12
 Flask==1.1.2
 Flask-Session==0.3.2
 greenlet==1.0.0
+gunicorn==20.1.0
 help50==3.0.3
 html5lib==1.1
 icdiff==1.9.1
 idna==2.10
+ikp3db==1.4.5
 Inflector==2.0.12
 intervaltree==2.1.0
 isort==5.8.0
@@ -62,13 +64,14 @@ pyasn1==0.4.8
 pycodestyle==2.7.0
 pycparser==2.20
 Pygments==2.8.1
-pylint==2.7.4
-pylint-django==2.4.2
+pylint==2.8.2
+pylint-django==2.4.4
 pylint-flask==0.6
 pylint-plugin-utils==0.6
 pyparsing==2.4.7
 PyPDF2==1.26.0
 Pyphen==0.10.0
+PyQRCode==1.2.1
 python-dateutil==2.8.1
 python-magic==0.4.22
 pytz==2021.1
@@ -99,5 +102,3 @@ WeasyPrint==52.4
 webencodings==0.5.1
 Werkzeug==1.0.1
 wrapt==1.12.1
-gunicorn
-psycopg2
