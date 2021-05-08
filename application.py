@@ -49,7 +49,7 @@ app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
 # Just Checking
-db = SQL(os.environ["DATABASE_URL"])
+db = SQL(os.getenv("DATABASE_URL"))
 
 # Make sure API key is set
 if not os.environ.get("API_KEY"):
@@ -229,3 +229,7 @@ def errorhandler(e):
 for code in default_exceptions:
     app.errorhandler(code)(errorhandler)
 
+if __name == '__main__':
+    app.debug = True
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
